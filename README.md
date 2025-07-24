@@ -22,3 +22,16 @@ Aplikasi sederhana berbasis Python CLI untuk mengelola stok obat di toko apotek.
 3. Jalankan aplikasi melalui terminal:
    ```bash
    python inventori_apotek.py
+| File                    | Deskripsi                        |
+| ----------------------- | -------------------------------- |
+| `inventori_apotek.py`   | Kode utama aplikasi              |
+| `inventori_apotek.json` | File data obat dalam format JSON |
+| `README.md`             | Dokumentasi penggunaan aplikasi  |
+=== Menu Inventori Toko Apotek ===
+1. Tambah Obat
+2. Lihat Semua Obat
+3. Edit Stok Obat
+4. Hapus Obat
+5. Laporan Stok
+6. Simpan & Keluar
+
