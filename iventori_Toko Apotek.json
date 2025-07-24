@@ -1,5 +1,3 @@
-Tentu, Carolline! Aku bisa bantu membuat kode sederhana untuk sistem inventori manual toko apotik. Karena ini untuk pengelolaan stok obat secara manual, kita bisa buat dengan pendekatan berbasis file atau spreadsheet, atau menggunakan Python untuk kemudahan pencatatan. Berikut contoh dasar kode inventori menggunakan Python:
-
 ### 🏥 Contoh Program Inventori Toko Apotik (Manual dengan Python)
 
 ```python
