@@ -1,22 +1,57 @@
- 2. USER MANUAL – Inventori Toko Apotek
-Deskripsi:
-Aplikasi ini digunakan untuk mencatat dan memantau data stok obat-obatan di toko apotek. Anda dapat menambahkan, melihat, mengedit, dan menghapus data obat secara interaktif melalui terminal/command prompt.
+Tentu, Carolline! Aku bisa bantu membuat kode sederhana untuk sistem inventori manual toko apotik. Karena ini untuk pengelolaan stok obat secara manual, kita bisa buat dengan pendekatan berbasis file atau spreadsheet, atau menggunakan Python untuk kemudahan pencatatan. Berikut contoh dasar kode inventori menggunakan Python:
 
-Cara Menjalankan:
-Pastikan Python telah terinstal.
+### 🏥 Contoh Program Inventori Toko Apotik (Manual dengan Python)
 
-Simpan file Python dengan nama inventori_apotek.py.
+```python
+# Daftar obat
+inventory = {}
 
-Jalankan program:
+# Fungsi tambah obat
+def tambah_obat(kode, nama, stok, harga):
+    inventory[kode] = {
+        "nama": nama,
+        "stok": stok,
+        "harga": harga
+    }
 
-python inventori_apotek.py
+# Fungsi tampilkan semua obat
+def tampilkan_inventory():
+    print("=== Daftar Obat ===")
+    for kode, data in inventory.items():
+        print(f"{kode} | {data['nama']} | Stok: {data['stok']} | Harga: Rp {data['harga']}")
 
-Menu & Fungsinya:
-| Menu                    | Fungsi                                              |
-| ----------------------- | --------------------------------------------------- |
-| **1. Tambah Obat**      | Tambahkan data obat baru.                           |
-| **2. Lihat Semua Obat** | Menampilkan seluruh obat yang tersimpan.            |
-| **3. Edit Stok Obat**   | Mengubah jumlah stok obat berdasarkan kode.         |
-| **4. Hapus Obat**       | Menghapus data obat dari sistem.                    |
-| **5. Laporan Stok**     | Menampilkan daftar stok obat dari yang terbanyak.   |
-| **6. Simpan & Keluar**  | Menyimpan semua perubahan dan keluar dari aplikasi. |
+# Fungsi update stok
+def update_stok(kode, jumlah):
+    if kode in inventory:
+        inventory[kode]["stok"] += jumlah
+        print(f"Stok untuk {inventory[kode]['nama']} diperbarui.")
+    else:
+        print("Obat tidak ditemukan.")
+
+# Fungsi hapus obat
+def hapus_obat(kode):
+    if kode in inventory:
+        del inventory[kode]
+        print("Obat berhasil dihapus.")
+    else:
+        print("Obat tidak ditemukan.")
+
+# Contoh penggunaan
+tambah_obat("OB001", "Paracetamol", 50, 3000)
+tambah_obat("OB002", "Amoxicillin", 30, 4500)
+
+tampilkan_inventory()
+update_stok("OB001", 20)
+hapus_obat("OB002")
+tampilkan_inventory()
+```
+
+---
+
+### 📝 Fitur yang Bisa Ditambahkan
+- Simpan data ke file CSV atau Excel
+- Cari obat berdasarkan nama atau kode
+- Cetak laporan stok minimum
+- Interface pengguna menggunakan menu konsol atau GUI (seperti Tkinter)
+
+Kalau kamu mau versi spreadsheet atau pakai aplikasi tertentu seperti Excel atau Google Sheets, aku bisa bantu buat template-nya juga. Mau dikembangkan jadi aplikasi kecil? 😉
