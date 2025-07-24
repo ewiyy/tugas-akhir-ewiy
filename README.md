@@ -44,10 +44,27 @@ Kode obat: OBT001
 Nama obat: Paracetamol
 Jumlah stok: 100
 
-edit stok
-
+Edit stok  
 Masukkan kode obat yang ingin diedit: OBT001
 Stok baru: 50
+
+Catatan Teknis
+Data obat disimpan dalam format:
+[
+  {
+    "kode": "OBT001",
+    "nama": "Paracetamol",
+    "stok": 50
+
+
+  }
+  
+
+
+]
+Untuk menyimpan data secara manual, pilih opsi 6 (Simpan & Keluar) di menu utama.
+
+
 
 
 
