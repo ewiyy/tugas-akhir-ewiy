@@ -37,30 +37,59 @@ Saat dijalankan, aplikasi menampilkan menu berikut
 5. Laporan Stok
 6. Simpan & Keluar
 
-Contoh:
+## Penjelasan vitur 
+1. Tambah Obat
+Untuk menambahkan obat baru ke dalam sistem.
 
+Input yang diminta:
+Kode obat (unik)
+Nama obat
+Jumlah stok awal
+Jika kode sudah ada, akan muncul peringatan.
+Contoh :
 Kode obat: OBT001
 Nama obat: Paracetamol
 Jumlah stok: 100
 
-Edit stok  
+2. Lihat Semua Obat
+Menampilkan seluruh data obat yang tersimpan dalam sistem.
+Format tampilan:
+OBT001 - Paracetamol (Stok: 100)
 
+3. Edit Stok Obat
+Untuk mengubah jumlah stok dari obat yang sudah ada.
+Masukkan kode obat, lalu stok baru.
+
+Contoh:
 Masukkan kode obat yang ingin diedit: OBT001
 Stok baru: 50
 
+4. Hapus Obat
+Untuk menghapus data obat dari sistem.
+Hanya memerlukan kode obat.
 
-Catatan Teknis
-Data obat disimpan dalam format:
+Contoh:
+Masukkan kode obat yang ingin dihapus: OBT004
+Obat berhasil dihapus.
 
-[
-  {
-    "kode": "OBT001",
-    "nama": "Paracetamol",
-    "stok": 50
-  }
-]
+5. Laporan Stok
+Menampilkan daftar semua obat yang diurutkan berdasarkan jumlah stok dari terbanyak ke tersedikit.
+Berguna untuk pemantauan stok secara cepat.
 
-Untuk menyimpan data secara manual, pilih opsi 6 (Simpan & Keluar) di menu utama.
+Contoh Output:
+Laporan stok (diurutkan dari jumlah terbanyak):
+Ponstan - Stok: 200
+Bodrex Extra - Stok: 150
+Paracetamol - Stok: 50
+
+6. Simpan & Keluar
+Menyimpan semua perubahan ke file inventori_apotek.json.
+Program akan keluar setelah penyimpanan berhasil.
+
+
+
+
+
 
 
 
