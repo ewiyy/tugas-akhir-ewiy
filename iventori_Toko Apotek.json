@@ -1,0 +1,22 @@
+ 2. USER MANUAL – Inventori Toko Apotek
+Deskripsi:
+Aplikasi ini digunakan untuk mencatat dan memantau data stok obat-obatan di toko apotek. Anda dapat menambahkan, melihat, mengedit, dan menghapus data obat secara interaktif melalui terminal/command prompt.
+
+Cara Menjalankan:
+Pastikan Python telah terinstal.
+
+Simpan file Python dengan nama inventori_apotek.py.
+
+Jalankan program:
+
+python inventori_apotek.py
+
+Menu & Fungsinya:
+| Menu                    | Fungsi                                              |
+| ----------------------- | --------------------------------------------------- |
+| **1. Tambah Obat**      | Tambahkan data obat baru.                           |
+| **2. Lihat Semua Obat** | Menampilkan seluruh obat yang tersimpan.            |
+| **3. Edit Stok Obat**   | Mengubah jumlah stok obat berdasarkan kode.         |
+| **4. Hapus Obat**       | Menghapus data obat dari sistem.                    |
+| **5. Laporan Stok**     | Menampilkan daftar stok obat dari yang terbanyak.   |
+| **6. Simpan & Keluar**  | Menyimpan semua perubahan dan keluar dari aplikasi. |
