@@ -44,12 +44,14 @@ Nama obat: Paracetamol
 Jumlah stok: 100
 
 Edit stok  
+
 Masukkan kode obat yang ingin diedit: OBT001
 Stok baru: 50
 
 
 Catatan Teknis
 Data obat disimpan dalam format:
+
 [
   {
     "kode": "OBT001",
